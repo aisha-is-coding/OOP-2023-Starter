@@ -48,16 +48,22 @@ public class DANI extends PApplet {
 		sonnet = loadStrings("small.txt");
 	}
 
-	/* public void printSonnet()
-	{
-		//print out the contents of the sonnet array
-		for(String line: sonnet)
-		{
-			System.out.println(line);
+	//
+	/* public void printModel() {
+		for (Word word : model) {
+		  System.out.print(word.getWord() + ": ");
+		  ArrayList<Follow> follows = word.getFollows();
+		  for (int i = 0; i < follows.size(); i++) {
+			Follow follow = follows.get(i);
+			System.out.print(follow.getWord() + "(" + follow.getCount() + ")");
+			if (i < follows.size() - 1) {
+			  System.out.print(" ");
+			}
+		  }
+		  System.out.println();
 		}
-	}
+	  }
 	*/
-	
 }
 
 

@@ -30,6 +30,13 @@ public class Follow {
         this.count = count;
     }
 
+    public void incrementCount() {
+        count++;
+    }
+
     
+    public String toString() {
+        return word + "(" + count + ")";
+    }
 
 }

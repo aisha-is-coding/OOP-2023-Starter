@@ -15,5 +15,15 @@ public class Word {
     public ArrayList<Follow> getFollows() {
         return follows;
     }
-    
+
+    public void addFollow(String followWord) {
+        for (Follow follow : follows) {
+            if (follow.getWord().equals(followWord)) {
+                follow.incrementCount();
+                return;
+            }
+        }
+        // i need to call the follow class for this to work
+        follows.add(new Follow(followWord));
+    }
 }
