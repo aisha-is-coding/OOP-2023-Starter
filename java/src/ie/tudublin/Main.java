@@ -63,6 +63,12 @@ public class Main
         processing.core.PApplet.runSketch( a, new DANI());
     }
 
+	public static void follow() {
+
+		String[] a = {"MAIN"};
+		//processing.core.PApplet.runSketch( a, new Follow());
+	}
+
 	
 	public static void main(String[] args)
 	{
