@@ -44,14 +44,21 @@ public class DANI extends PApplet {
 
 	public void loadFile()
 	{
-		//
+		//load a file called small.txt
+		sonnet = loadStrings("small.txt");
 	}
 
+	/* public void printSonnet()
+	{
+		//print out the contents of the sonnet array
+		for(String line: sonnet)
+		{
+			System.out.println(line);
+		}
+	}
+	*/
 	
 }
-
-
-
 
 
 

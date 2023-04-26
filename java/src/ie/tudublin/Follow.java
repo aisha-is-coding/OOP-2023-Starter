@@ -4,24 +4,32 @@ import java.util.ArrayList;
 
 public class Follow {
     
-    
-    int count = 0;
+    String word; 
+    int count; 
+
+    // class constructor
+    public Follow(String word, int count) {
+        this.word = word;
+        this.count = count;
+    }
+
+    // getters and setters;
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
+    }
 
     public int getCount() {
         return count;
     }
 
-   
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     
-
-
-    /*
-    public Follow() {
-        // create an ArrayList of type Follow
-        ArrayList<Follow> follows = new ArrayList<Follow>();
-        // add a new Follow to the ArrayList
-        follows.add(new Follow());
-    } */
 
 }
